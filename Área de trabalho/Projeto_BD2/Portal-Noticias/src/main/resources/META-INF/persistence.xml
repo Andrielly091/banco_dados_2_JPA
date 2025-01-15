@@ -1,0 +1,18 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+    <persistence-unit name="crud-basic">
+        <class>br.edu.ifpe.Usuario</class>
+        <class>br.edu.ifpe.Pagamento</class>
+        <class>br.edu.ifpe.Perfil</class>
+        <class>br.edu.ifpe.Noticia</class>
+        <class>br.edu.ifpe.Categoria</class>
+        <class>br.edu.ifpe.Tag</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:testdb"/>
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+        </properties>
+    </persistence-unit>
+</persistence>
